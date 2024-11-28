@@ -1,0 +1,29 @@
+{
+    "productos": [
+      {
+        "Nombre del producto": "Consola PS5 de 1 TB edición bundle",
+        "Precio original": "$15,999",
+        "Precio con descuento": "$10,99900",
+        "ID del producto": "1148315104",
+        "URL del producto": "/tienda/pdp/consola-ps5-de-1-tb-edici%C3%B3n-bundle/1148315104?skuid=1148315104",
+        "URL de la imagen": "https://ss423.liverpool.com.mx/sm/1148315104.jpg"
+      },
+      {
+        "Nombre del producto": "Consola PS5 Slim de 1 TB edición estándar",
+        "Precio original": "$13,999",
+        "Precio con descuento": "$11,664.00",
+        "ID del producto": "1146391776",
+        "URL del producto": "/tienda/pdp/consola-ps5-slim-de-1-tb-edici%C3%B3n-est%C3%A1ndar/1146391776?skuid=1146391776",
+        "URL de la imagen": "https://ss423.liverpool.com.mx/sm/1146391776.jpg"
+      },
+      {
+        "Nombre del producto": "EA Sports FC 25 para PlayStation 5",
+        "Precio original": "$1,599",
+        "Precio con descuento": "$719.10",
+        "ID del producto": "1160735780",
+        "URL del producto": "/tienda/pdp/ea-sports-fc-25-para-playstation-5/1160735780?skuid=1160735780",
+        "URL de la imagen": "https://ss423.liverpool.com.mx/sm/1160735780.jpg"
+      }
+    ]
+  }
+  

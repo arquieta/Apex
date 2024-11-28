@@ -1,0 +1,26 @@
+{
+  "name": "apex",
+  "version": "1.0.0",
+  "description": "Scripts for interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Apex"
+  },
+  "keywords": [
+    "Apex",
+    "test",
+    "scripts",
+    "interview"
+  ],
+  "author": "Diego Arquieta",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.16.0",
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2"
+  }
+}
