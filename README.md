@@ -1,2 +1,2 @@
-# Cypress1
+# Cypress Interview
 Scripts regarding Apex interview
