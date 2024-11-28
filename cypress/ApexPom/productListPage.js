@@ -61,7 +61,7 @@ class ProductListPage {
 
 validateAndClickPrice(precio) {
   // Verificar que el elemento contenedor del filtro existe y está visible
-  cy.get('.o-aside > :nth-child(23)').within(() => {
+  cy.get('.o-aside > :nth-child(21)').within(() => {
     //ver todas las opciones
     
     cy.wait(5000)
