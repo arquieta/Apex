@@ -1,9 +1,11 @@
 class ProductListPage {
     validateProductListContains(text) {
+      cy.get(':nth-child(1) > .a-category__listElement').click()
       cy.get('ul.m-product__listingPlp').then(($ul) => {
         const hasProduct = $ul.find(`li:contains("${text}")`).length > 0;
         expect(hasProduct).to.be.true;
       });
+      
     }
   
     selectProductById(productId) {
@@ -12,7 +14,7 @@ class ProductListPage {
 
     validateFilterSize() {
       // Validar el filtro de Tamaño
-      cy.get(':nth-child(25) > .a-plp__btnFilter > .a-title__filter')
+      cy.get(':nth-child(23) > .a-plp__btnFilter > .a-title__filter')
         .should('be.visible') // Verifica que el elemento es visible
         .find('label') // Encuentra la etiqueta <label> dentro del selector
         .should('have.text', 'Tamaño'); // Valida que contiene el texto "Tamaño"
@@ -21,7 +23,7 @@ class ProductListPage {
     validateFilterPrice() {
       
       // Validar el filtro de Precios
-      cy.get(':nth-child(27) > .a-plp__btnFilter > .a-title__filter')
+      cy.get(':nth-child(25) > .a-plp__btnFilter > .a-title__filter')
         .should('be.visible') // Verifica que el elemento es visible
         .find('label') // Encuentra la etiqueta <label> dentro del selector
         .should('have.text', 'Precios'); // Valida que contiene el texto "Precios"
@@ -29,7 +31,7 @@ class ProductListPage {
 
     validateAndClickSize(tamaño) {
       // Verificar que el elemento contenedor del filtro existe y está visible
-      cy.get('.o-aside > :nth-child(25)').within(() => {
+      cy.get('.o-aside > :nth-child(23)').within(() => {
         //ver todas las opciones
         cy.get('#Tamao').click()
         cy.wait(5000)
@@ -61,7 +63,7 @@ class ProductListPage {
 
 validateAndClickPrice(precio) {
   // Verificar que el elemento contenedor del filtro existe y está visible
-  cy.get('.o-aside > :nth-child(21)').within(() => {
+  cy.get('.o-aside > :nth-child(23)').within(() => {
     //ver todas las opciones
     
     cy.wait(5000)
@@ -75,13 +77,13 @@ validateAndClickPrice(precio) {
 
 validateFiltersApplied(filter1, filter2, filter3) { 
 
-  cy.get('.plp-filters-container .mdc-chip__text')
+  cy.get('.newSelectedFiltersContainer')
   .should(($texts) => {
     const sizeText = $texts.text();
     // Validar que contiene '55 pulgadas' y '10000'
-    expect(sizeText).to.include(filter1);
-    expect(sizeText).to.include(filter2);
     expect(sizeText).to.include(filter3);
+    expect(sizeText).to.include(filter2);
+    expect(sizeText).to.include(filter1);
   })
   .should('be.visible');
 }
